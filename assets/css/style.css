@@ -1,0 +1,172 @@
+@import "token.css";
+@font-face {
+  font-family: "Museo Sans";
+  src: url("../fonts/museosans_300-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Museo Sans";
+  src: url("../fonts/museosans_300-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Museo Sans";
+  src: url("../fonts/museosans_500-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Museo Sans";
+  src: url("../fonts/museosans_700-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+/* Font Mapping for Font Weight Name */
+@font-face {
+  font-family: "Museo Sans";
+  src: url("../fonts/museosans_300-webfont.woff") format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Museo Sans";
+  src: url("../fonts/museosans_700-webfont.woff") format("woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Museo Sans";
+  src: url("../fonts/museosans_700-webfont.woff") format("woff");
+  font-weight: bolder;
+}
+
+* {
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-normal);
+  /* color: var(--color-text); */
+  box-sizing: border-box;
+}
+
+/* Reset h1-h6 heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: inherit;
+  font-size: 1rem; /* reset to default size */
+  line-height: 1.5rem;
+}
+
+.text-allcap {
+  text-transform: uppercase;
+}
+
+.text-body_regular {
+  font-size: var(--font-size-5);
+  line-height: var(--font-size-8);
+  font-weight: var(--font-weight-normal);
+}
+
+.text-body_xxlarge {
+  font-size: var(--font-size-9);
+  line-height: var(--font-size-11);
+  font-weight: var(--font-weight-normal);
+}
+
+.text-body_xlarge {
+  font-size: var(--font-size-8);
+  line-height: var(--font-size-10);
+  font-weight: var(--font-weight-normal);
+}
+
+.text-body_large {
+  font-size: var(--font-size-7);
+  line-height: var(--font-size-9);
+  font-weight: var(--font-weight-normal);
+}
+
+.text-body_small {
+  font-size: var(--font-size-4);
+  line-height: var(--font-size-6);
+  font-weight: var(--font-weight-normal);
+}
+
+.text-body_xsmall {
+  font-size: var(--font-size-2);
+  line-height: var(--font-size-4);
+  font-weight: var(--font-weight-normal);
+}
+
+.text-heading_xlarge {
+  font-size: var(--font-size-11);
+  line-height: var(--font-size-12);
+  font-weight: var(--font-weight-bold);
+}
+
+.text-heading_large {
+  font-size: var(--font-size-10);
+  line-height: var(--font-size-11);
+  font-weight: var(--font-weight-bold);
+}
+
+.text-heading_medium {
+  font-size: var(--font-size-8);
+  line-height: var(--font-size-9);
+  font-weight: var(--font-weight-bold);
+}
+
+.text-heading_small {
+  font-size: var(--font-size-6);
+  line-height: var(--font-size-7);
+  font-weight: var(--font-weight-medium);
+}
+
+.text-heading_xsmall {
+  font-size: var(--font-size-4);
+  line-height: var(--font-size-5);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Demo Styles */
+.demo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.margin-none {
+  margin: 0;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+
+.page-container {
+  padding: var(--spacing-medium);
+}
+
+table {
+  border-spacing: 1rem;
+
+  & thead {
+    background-color: var(--color-gray-light);
+  }
+}

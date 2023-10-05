@@ -1,0 +1,184 @@
+@import "token.css";
+
+/* Button Base Class */
+.btn {
+  text-transform: capitalize;
+  cursor: pointer;
+  padding: 0.75em 1.5em;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2em;
+  box-sizing: border-box;
+  border-width: 2px;
+  border-style: solid;
+  user-select: none;
+  position: relative;
+  transform: translateZ(0);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Button Size Classes */
+.btn-large {
+  font-size: var(--font-size-7);
+}
+
+.btn-medium {
+  font-size: var(--font-size-5);
+}
+
+.btn-small {
+  font-size: var(--font-size-4);
+}
+
+/* Full Width Button */
+.btn-full {
+  width: 100%;
+}
+
+/* Button Style Classes */
+.btn-solid-red {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  border-color: var(--color-red);
+}
+
+.btn-solid-teal {
+  background-color: var(--color-teal);
+  color: var(--color-white);
+  border-color: var(--color-teal);
+}
+
+.btn-solid-white {
+  background-color: var(--color-white);
+  color: var(--color-text);
+  border-color: var(--color-white);
+}
+
+.btn-outline-teal {
+  background-color: transparent;
+  color: var(--color-teal);
+  border-color: var(--color-teal);
+}
+
+.btn-outline-red {
+  background-color: transparent;
+  color: var(--color-red);
+  border-color: var(--color-red);
+}
+
+.btn-outline-white {
+  background-color: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+/* Primary and Secondary Button Style */
+.btn-primary {
+  background-color: var(--color-teal);
+  color: var(--color-white);
+  border-color: var(--color-teal);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-teal-light);
+  border-color: var(--color-teal-light);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-red);
+  border-color: var(--color-brand-secondary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+
+/* Button with Icon */
+.btn-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  gap: 0.5em;
+}
+
+/* Disable Button Style */
+.btn:disabled,
+.btn[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Button Animated Hover Effects */
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scaleY(0);
+  transform-origin: 50% 100%;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.3, 1);
+  box-sizing: border-box;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  transform: scaleY(1);
+}
+
+/* Button Hover Color*/
+.btn-solid-teal:hover {
+  border-color: var(--color-teal-light);
+}
+
+.btn-solid-teal.btn::before {
+  background-color: var(--color-teal-light);
+}
+
+.btn-solid-red:hover {
+  border-color: var(--color-red-light);
+}
+
+.btn-solid-red.btn::before {
+  background-color: var(--color-red-light);
+}
+
+.btn-solid-white:hover {
+  border-color: var(--color-text);
+  color: var(--color-white);
+}
+
+.btn-solid-white.btn::before {
+  background-color: var(--color-text);
+}
+
+.btn-outline-teal:hover {
+  color: var(--color-white);
+}
+
+.btn-outline-teal.btn::before {
+  background-color: var(--color-teal);
+}
+
+.btn-outline-red:hover {
+  color: var(--color-white);
+}
+
+.btn-outline-red.btn::before {
+  background-color: var(--color-red);
+}
+
+.btn-outline-white:hover {
+  color: var(--color-text);
+}
+
+.btn-outline-white.btn::before {
+  background-color: var(--color-white);
+}
