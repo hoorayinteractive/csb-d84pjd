@@ -59,7 +59,7 @@ p {
   padding: 0;
   font-weight: inherit;
   font-size: 1rem; /* reset to default size */
-  line-height: 1.5rem;
+  line-height: 1.5em;
 }
 
 .text-allcap {
@@ -68,67 +68,66 @@ p {
 
 .text-body_regular {
   font-size: var(--font-size-5);
-  line-height: var(--font-size-8);
   font-weight: var(--font-weight-normal);
 }
 
 .text-body_xxlarge {
   font-size: var(--font-size-9);
-  line-height: var(--font-size-11);
+  /* line-height: var(--font-size-11); */
   font-weight: var(--font-weight-normal);
 }
 
 .text-body_xlarge {
   font-size: var(--font-size-8);
-  line-height: var(--font-size-10);
+  /* line-height: var(--font-size-10); */
   font-weight: var(--font-weight-normal);
 }
 
 .text-body_large {
   font-size: var(--font-size-7);
-  line-height: var(--font-size-9);
+  /* line-height: var(--font-size-9); */
   font-weight: var(--font-weight-normal);
 }
 
 .text-body_small {
   font-size: var(--font-size-4);
-  line-height: var(--font-size-6);
+  /* line-height: var(--font-size-6); */
   font-weight: var(--font-weight-normal);
 }
 
 .text-body_xsmall {
   font-size: var(--font-size-2);
-  line-height: var(--font-size-4);
+  /* line-height: var(--font-size-4); */
   font-weight: var(--font-weight-normal);
 }
 
 .text-heading_xlarge {
   font-size: var(--font-size-11);
-  line-height: var(--font-size-12);
+  /* line-height: var(--font-size-12); */
   font-weight: var(--font-weight-bold);
 }
 
 .text-heading_large {
   font-size: var(--font-size-10);
-  line-height: var(--font-size-11);
+  /* line-height: var(--font-size-11); */
   font-weight: var(--font-weight-bold);
 }
 
 .text-heading_medium {
   font-size: var(--font-size-8);
-  line-height: var(--font-size-9);
+  /* line-height: var(--font-size-9); */
   font-weight: var(--font-weight-bold);
 }
 
 .text-heading_small {
   font-size: var(--font-size-6);
-  line-height: var(--font-size-7);
+  /* line-height: var(--font-size-7); */
   font-weight: var(--font-weight-medium);
 }
 
 .text-heading_xsmall {
   font-size: var(--font-size-4);
-  line-height: var(--font-size-5);
+  /* line-height: var(--font-size-5); */
   font-weight: var(--font-weight-medium);
 }
 

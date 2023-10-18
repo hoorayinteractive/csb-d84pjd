@@ -122,6 +122,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  width: 100%;
   transform: scaleY(0);
   transform-origin: 50% 100%;
   transition-duration: 0.3s;
@@ -130,7 +131,7 @@
   -webkit-transform-origin: 50% 100%;
   -webkit-transition-duration: 0.3s;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.3, 1);
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   z-index: -1;
 }
 
