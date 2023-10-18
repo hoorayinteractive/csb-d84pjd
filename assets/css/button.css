@@ -114,6 +114,11 @@
   pointer-events: none;
 }
 
+.btn-nohovereffect::before {
+  transition-property: none !important;
+  -webkit-transition-property: none !important;
+}
+
 /* Button Animated Hover Effects */
 .btn::before {
   content: "";
