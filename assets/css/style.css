@@ -60,6 +60,7 @@ p {
   font-weight: inherit;
   font-size: 1rem; /* reset to default size */
   line-height: 1.5em;
+  color: var(--color-text);
 }
 
 .text-allcap {
@@ -129,6 +130,36 @@ p {
   font-size: var(--font-size-4);
   /* line-height: var(--font-size-5); */
   font-weight: var(--font-weight-medium);
+}
+
+/* Text Link */
+a {
+  color: var(--color-link);
+  text-decoration: underline;
+  text-transform: none;
+  line-height: 1.5em;
+  font-weight: var(--font-weight-medium) !important;
+  display: inline-block;
+}
+
+a:hover,
+a:active {
+  color: var(--color-link-hover);
+}
+
+a.standalone {
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+/* Visual Classes */
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 /* Demo Styles */

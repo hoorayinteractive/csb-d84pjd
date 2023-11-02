@@ -48,7 +48,8 @@
   --color-brand-secondary: var(--color-red);
 
   --color-text: var(--color-gray-xdark);
-  --color-link: var(--color-brand-primary);
+  --color-link: var(--color-teal);
+  --color-link-hover: var(--color-teal-light);
 
   /* Default Font Family */
   --font-family-default: "Museo Sans", Helvetica-, Arial, sans-serif;
